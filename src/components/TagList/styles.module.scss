@@ -1,0 +1,19 @@
+@import '~styles/colors';
+
+.container {
+  padding-top: 10px;
+
+  .list {
+    padding-top: 20px;
+
+    .category {
+      color: $color4;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    li {
+      margin: 15px 0;
+    }
+  }
+}
