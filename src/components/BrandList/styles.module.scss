@@ -1,0 +1,43 @@
+@import '~styles/colors';
+
+$listMargin: 10px;
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: $listMargin;
+
+  li {
+    margin: $listMargin;
+    width: calc(100% - #{$listMargin * 2});
+    height: 300px;
+  }
+
+  @media screen and (min-width: 768px) {
+    li {
+      width: calc(50% - #{$listMargin * 2});
+      height: 300px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    li {
+      width: calc(33.33% - #{$listMargin * 2});
+      height: 300px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    li {
+      width: calc(25% - #{$listMargin * 2});
+      height: 300px;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    li {
+      width: calc(20% - #{$listMargin * 2});
+      height: 300px;
+    }
+  }
+}
