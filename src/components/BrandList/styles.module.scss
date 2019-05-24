@@ -1,10 +1,12 @@
 @import '~styles/colors';
 
-$listMargin: 10px;
+$listMargin: 5px;
+$listMarginBig: 10px;
 .container {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  padding: $listMargin;
 
   li {
     margin: $listMargin;
@@ -25,28 +27,29 @@ $listMargin: 10px;
   }
 
   @media screen and (min-width: 768px) {
-    padding: $listMargin;
+    padding: $listMarginBig;
 
     li {
-      width: calc(50% - #{$listMargin * 2});
+      margin: $listMarginBig;
+      width: calc(50% - #{$listMarginBig * 2});
     }
   }
 
   @media screen and (min-width: 900px) {
     li {
-      width: calc(33.33% - #{$listMargin * 2});
+      width: calc(33.33% - #{$listMarginBig * 2});
     }
   }
 
   @media screen and (min-width: 1200px) {
     li {
-      width: calc(25% - #{$listMargin * 2});
+      width: calc(25% - #{$listMarginBig * 2});
     }
   }
 
   @media screen and (min-width: 1400px) {
     li {
-      width: calc(20% - #{$listMargin * 2});
+      width: calc(20% - #{$listMarginBig * 2});
     }
   }
 }
