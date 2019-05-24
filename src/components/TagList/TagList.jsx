@@ -1,11 +1,12 @@
+import classnames from 'classnames';
 import Tag from 'components/Tag';
 import tags from 'data/tags';
 import { withAppContext } from 'providers/AppProvider';
 import React from 'react';
 import styles from './styles.module.scss';
 
-const TagList = ({ context }) => (
-  <div className={styles.container}>
+const TagList = ({ className, context }) => (
+  <div className={classnames(styles.container, className)}>
     {tags.map(category => (
       <ul className={styles.list} key={category.name}>
         <div className={styles.category}>{category.name}</div>

@@ -5,8 +5,8 @@ import styles from './styles.module.scss';
 
 const Sidebar = () => (
   <div className={styles.container}>
-    <Logo />
-    <TagList />
+    <Logo className={styles.logo} />
+    <TagList className={styles.tagList} />
   </div>
 );
 
