@@ -1,0 +1,16 @@
+@import '~styles/colors';
+
+.container {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  div {
+    width: 35px;
+    height: 3px;
+    background-color: $color1;
+    margin: 6px 0;
+  }
+}
